@@ -1,0 +1,21 @@
+{
+  "name": "nft-marketplace",
+  "version": "1.0.0",
+  "description": "A complete NFT marketplace with smart contracts, backend API, and frontend",
+  "scripts": {
+    "install-all": "cd contract && npm install && cd ../backend && npm install && cd ../web && npm install",
+    "dev:web": "cd web && npm run dev",
+    "dev:backend": "cd backend && npm start",
+    "build:contract": "cd contract && forge build",
+    "deploy:contract": "cd contract && forge script script/deploy.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast",
+    "test:contract": "cd contract && forge test"
+  },
+  "keywords": ["nft", "marketplace", "ethereum", "solidity", "nextjs"],
+  "author": "Your Name",
+  "license": "MIT",
+  "workspaces": [
+    "contract",
+    "backend", 
+    "web"
+  ]
+}
