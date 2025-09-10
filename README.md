@@ -5,7 +5,7 @@
 ```bash
 # 安装智能合约依赖
 cd contract
-npm install
+forge install
 
 # 安装后端依赖
 cd ../backend
@@ -49,6 +49,5 @@ forge deploy
 - 上架和下架 NFT
 - 价格修改
 - 钱包连接
-- 交易历史
 
 EOF
